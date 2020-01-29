@@ -1,0 +1,130 @@
+EESchema Schematic File Version 4
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 2
+Title "Batery Powered Arduino clone with clock and extended EEPROM "
+Date "2020-01-28"
+Rev "v1"
+Comp "OVIBBLE"
+Comment1 "Designed by: René Oviedo M."
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:Battery BT?
+U 1 1 5E30B974
+P 3750 4000
+F 0 "BT?" H 3858 4046 50  0000 L CNN
+F 1 "Battery" H 3858 3955 50  0000 L CNN
+F 2 "" V 3750 4060 50  0001 C CNN
+F 3 "~" V 3750 4060 50  0001 C CNN
+	1    3750 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E30C566
+P 4550 3950
+F 0 "C?" H 4665 3996 50  0000 L CNN
+F 1 "C" H 4665 3905 50  0000 L CNN
+F 2 "" H 4588 3800 50  0001 C CNN
+F 3 "~" H 4550 3950 50  0001 C CNN
+	1    4550 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E30CA1C
+P 4550 4450
+F 0 "C?" H 4665 4496 50  0000 L CNN
+F 1 "C" H 4665 4405 50  0000 L CNN
+F 2 "" H 4588 4300 50  0001 C CNN
+F 3 "~" H 4550 4450 50  0001 C CNN
+	1    4550 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C?
+U 1 1 5E30CDB3
+P 4550 4900
+F 0 "C?" H 4668 4946 50  0000 L CNN
+F 1 "CP" H 4668 4855 50  0000 L CNN
+F 2 "" H 4588 4750 50  0001 C CNN
+F 3 "~" H 4550 4900 50  0001 C CNN
+	1    4550 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5E30D652
+P 3750 4600
+F 0 "D?" H 3743 4816 50  0000 C CNN
+F 1 "LED" H 3743 4725 50  0000 C CNN
+F 2 "" H 3750 4600 50  0001 C CNN
+F 3 "~" H 3750 4600 50  0001 C CNN
+	1    3750 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E30DB24
+P 5200 4000
+F 0 "R?" H 5270 4046 50  0000 L CNN
+F 1 "R" H 5270 3955 50  0000 L CNN
+F 2 "" V 5130 4000 50  0001 C CNN
+F 3 "~" H 5200 4000 50  0001 C CNN
+	1    5200 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E30DF48
+P 5200 4450
+F 0 "R?" H 5270 4496 50  0000 L CNN
+F 1 "R" H 5270 4405 50  0000 L CNN
+F 2 "" V 5130 4450 50  0001 C CNN
+F 3 "~" H 5200 4450 50  0001 C CNN
+	1    5200 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Memory_EEPROM:24LC1025 U?
+U 1 1 5E30E575
+P 5950 4250
+F 0 "U?" H 5950 4731 50  0000 C CNN
+F 1 "24LC1025" H 5950 4640 50  0000 C CNN
+F 2 "" H 5950 4250 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21941B.pdf" H 5950 4250 50  0001 C CNN
+	1    5950 4250
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 6950 4450 1350 1950
+U 5E30EEAB
+F0 "Connectors" 50
+F1 "Connectors.sch" 50
+$EndSheet
+$Comp
+L dk_Embedded-Microcontrollers:ATMEGA328P-AU U?
+U 1 1 5E312B00
+P 2800 4550
+F 0 "U?" H 3128 4653 60  0000 L CNN
+F 1 "ATMEGA328P-AU" H 3128 4547 60  0000 L CNN
+F 2 "digikey-footprints:TQFP-32_7x7mm" H 3000 4750 60  0001 L CNN
+F 3 "http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en608326" H 3000 4850 60  0001 L CNN
+F 4 "ATMEGA328P-AU-ND" H 3000 4950 60  0001 L CNN "Digi-Key_PN"
+F 5 "ATMEGA328P-AU" H 3000 5050 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 3000 5150 60  0001 L CNN "Category"
+F 7 "Embedded - Microcontrollers" H 3000 5250 60  0001 L CNN "Family"
+F 8 "http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en608326" H 3000 5350 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/microchip-technology/ATMEGA328P-AU/ATMEGA328P-AU-ND/1832260" H 3000 5450 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC MCU 8BIT 32KB FLASH 32TQFP" H 3000 5550 60  0001 L CNN "Description"
+F 11 "Microchip Technology" H 3000 5650 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 3000 5750 60  0001 L CNN "Status"
+	1    2800 4550
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
